@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiHelper {
-  late String url;
+  String url;
 
   ApiHelper(this.url);
 
