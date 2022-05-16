@@ -1,5 +1,7 @@
 import 'package:clima_app/controllers/clima_controller.dart';
 import 'package:clima_app/models/clima.dart';
+import 'package:clima_app/pages/cidade.dart';
+import 'package:clima_app/pages/tela_carregamento.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -25,7 +27,14 @@ class _PrincipalState extends State<Principal> {
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.location_searching),
-          onPressed: () {},
+          onPressed: () async {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const TelaCarregamento(pagina: 'atual'),
+              ),
+            );
+          },
         ),
         centerTitle: true,
         title: Text(
@@ -34,7 +43,14 @@ class _PrincipalState extends State<Principal> {
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: () {},
+            onPressed: () async {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Cidade(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -56,13 +72,13 @@ class _PrincipalState extends State<Principal> {
                 ),
               ),
               Padding(
-                  padding: const EdgeInsets.only(top: 25),
-                  child: SizedBox(
-                    height: 150,
-                    child: Text(' ${widget.clima.temperatura} °C',
-                        style: const TextStyle(fontSize: 25)),
-                  ),
+                padding: const EdgeInsets.only(top: 25),
+                child: SizedBox(
+                  height: 150,
+                  child: Text(' ${widget.clima.temperatura} °C',
+                      style: const TextStyle(fontSize: 25)),
                 ),
+              ),
             ],
           ),
           Container(
