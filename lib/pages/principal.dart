@@ -14,7 +14,7 @@ class Principal extends StatefulWidget {
 }
 
 class _PrincipalState extends State<Principal> {
-  ClimaController climaController;
+  ClimaController climaController = ClimaController();
   @override
   void initState() {
     super.initState();
@@ -67,7 +67,7 @@ class _PrincipalState extends State<Principal> {
               Padding(
                 padding: const EdgeInsets.only(left: 25, top: 25),
                 child: Image.asset(
-                  'assets/images/trovoada.png',
+                  climaController.getClimaImagem(widget.clima.condicao),
                   width: 150,
                 ),
               ),
