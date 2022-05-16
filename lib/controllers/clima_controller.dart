@@ -31,4 +31,18 @@ class ClimaController {
 
     return Clima.fromJson(result);
   }
+
+  String getClimaImagem(int condicao) {
+    if (condicao < 300) {
+      return 'assets/images/trovoada.png';
+    } else if (condicao < 600) {
+      return 'assets/images/chuva.png';
+    } else if (condicao < 700) {
+      return 'assets/images/neve.png';
+    } else if (condicao < 800) {
+      return 'assets/images/sol.png';
+    } else {
+      return 'assets/images/limpo.png';
+    }
+  }
 }
