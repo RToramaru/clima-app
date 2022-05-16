@@ -18,3 +18,8 @@ flutter pub get
 ## Desenvolvedor
 
 Rafael Almeida Soares https://github.com/RToramaru
+
+
+## Demonstração
+
+![](https://github.com/RToramaru/clima-app/blob/main/screen/demonstracao.gif)
