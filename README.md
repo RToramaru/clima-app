@@ -3,7 +3,10 @@
 
 Clima App é um aplicativo desenvolvido utilizando o Flutter para exibir o clima da localização atual ou um local específico.
 
+O aplicarivo funciona consumindo a Weather API, que oferece um plano grátis para utilizar da mesma.
 
+Para obter uma chave da Weather API acesse o link https://openweathermap.org/api e altere dentro do aplicativo em 
+`lib/utils/constantes.dart`
 
 ## Instalação
 
@@ -22,4 +25,4 @@ Rafael Almeida Soares https://github.com/RToramaru
 
 ## Demonstração
 
-![](https://github.com/RToramaru/clima-app/blob/main/screen/demonstracao.gif)
+![](/screen/demonstracao.gif)
