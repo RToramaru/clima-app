@@ -25,4 +25,5 @@ Rafael Almeida Soares https://github.com/RToramaru
 
 ## Demonstração
 
-![](/screen/demonstracao.gif)
+![](/screens/1.png)
+![](/screens/2.png)
